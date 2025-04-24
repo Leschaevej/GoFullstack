@@ -27,8 +27,8 @@ exports.getOneThing = (req, res, next) => {
   Thing.findOne({
     _id: req.params.id
   }).then(
-    (thing) => {
-      res.status(200).json(thing);
+    (Thing) => {
+      res.status(200).json(Thing);
     }
   ).catch(
     (error) => {
